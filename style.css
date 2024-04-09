@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: monospace;
+  padding: 2%;
+  color: black;
+  font-size: larger;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/1290141/pexels-photo-1290141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#mainheader h1 {
+  text-align: center;
+  margin: 50px auto;
+  background-color: antiquewhite;
+  border-radius: 2px;
+  width: fit-content;
+}
+.container{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgba(233, 232, 205, 0.788);
+  border-radius: 5px;
+}
+.subHeader h2 {
+  text-align: center;
+  margin: 20px auto;
+  width: 800px;
+}
+div#navbar {
+  text-align: center;
+  margin: 0 auto;
+}
+div#navbar a {
+  display: inline-block;
+  padding: 10px 60px;
+  background-color: antiquewhite;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover {
+  background-color: burlywood;
+  color: black;
+}
+#navbar a.ctive {
+  background-color: aliceblue;
+  color: whitesmoke;
+}
+#home h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+#home h3 {
+  text-align: center;
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+#search {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-left: 200px;
+}
+#search:hover{
+    background-color: burlywood;
+    color: whitesmoke
+}
+#searchBtn {
+  border: 1px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: bisque;
+  color: black;
+  font-weight: 200;
+}
+#searchBtn:hover {
+  background-color: burlywood;
+  color: black;
+}
+#book{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#footer {
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    color: #fff; /* Set text color to white */
+    text-align: center; /* Center align text */
+  }
+  
+  #footer p {
+    margin-bottom: 10px; /* Reduce margin for better spacing */
+  }
+  
+  #footer a {
+    display: inline-block; /* Set display to inline-block */
+    margin: 0 10px; /* Add margin for spacing between social media icons */
+    padding: 10px; /* Reduce padding for more compact appearance */
+  }
+  
+  #footer a img {
+    width: 60px; /* Set width for social media icons */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
