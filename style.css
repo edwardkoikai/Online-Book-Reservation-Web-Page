@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100%;
   height: 100vh;
   font-family: monospace;
   padding: 2%;
@@ -28,6 +29,12 @@ body {
   background-color: rgba(233, 232, 205, 0.788);
   border-radius: 5px;
 }
+.catalogue{
+  background-color: rgba(233, 232, 205, 0.788);
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto
+}
 .subHeader h2 {
   text-align: center;
   margin: 20px auto;
@@ -36,6 +43,7 @@ body {
 div#navbar {
   text-align: center;
   margin: 0 auto;
+  transform: transform 0.3s ease;
 }
 div#navbar a {
   display: inline-block;
@@ -45,10 +53,12 @@ div#navbar a {
   border-radius: 5px;
   text-decoration: none;
   font-size: 17px;
+  
 }
 #navbar a:hover {
   background-color: burlywood;
   color: black;
+  transform: scale(1.1);
 }
 #navbar a.ctive {
   background-color: aliceblue;
@@ -92,12 +102,88 @@ div#navbar a {
   background-color: burlywood;
   color: black;
 }
-#book{
+.cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding: 20px
+} 
+.card{
+  width: 200px;
+  height: 375px;
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #666;
+
+}
+
+.card img{
+  width: 150px;
+  height: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+  transform: transform 0.3s ease;
+}
+.card img:hover{
+  transform: scale(1.1);
+}
+.content{
+  /* width: 180px; */
+  font-style:inherit;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 200px; */
+  
+  
+}
+.content p{
+ margin-top: 5px;
+ margin-bottom: 5px;
+ font-size: 0.75em;
+}
+.content h4{
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+ .reserveBtn {
+  /* width: 200px; */
+  text-align: center;
+  margin-bottom: 2px;
+  /* border: 1px;
+  border-radius: 5px;  */
+  /* margin-top:auto;
+  padding: 20px; */
+  /* margin-bottom: 5px; */
+
+}
+.reserveBtn button{
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px;
+  border: 1px;
+  border-radius: 5px;
+  background-color: bisque;
+  /* color: red; */
+  
+  /* /* margin-top: 2px; */
+ 
+  /* position: relative; */
+}
+.reserveBtn button:hover{
+    background-color: black;
+    color:aliceblue;
+}
+.reserveBtn button:visited{
+  background-color:powderblue;
+  color:darkred;
 }
 #footer {
     width: 100%;
@@ -105,6 +191,7 @@ div#navbar a {
     padding: 20px;
     color: #fff; /* Set text color to white */
     text-align: center; /* Center align text */
+    margin-bottom: 0;
   }
   
   #footer p {

@@ -3,66 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
 
     <title>Online-Book-Reservation-Web-Page</title>
   </head>
   <body>
     <!--Contains the header of our webpage-->
     <header id="mainheader"><h1>Online Book Reservation Web Page</h1></header>
-    <main class="main">
-        <!--Navigation bar to allow users to navigate smoothly on our webpage-->
+    <!--Navigation bar to allow users to navigate smoothly on our webpage-->
     <div id="navbar" class="container">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#catalogue">Our Catalogue</a>
-            <a href="#basket">Reservation Basket</a>
-        </nav>
-      </div>
-      <!--Home Page-->
-      <div id="home" class="container">
-        <!-- a short description of the webpage -->
-        <h2>Welcome!</h2>
-        <h3>Discover the joy of reading with our curated collection of
-            books available for reservation. Whether you're a bookworm or a casual
-            reader, our user-friendly platform makes it easy to explore and reserve
-            your favorite titles with just a few clicks.
-        </h3>
-      </div>
-      <!--Catalogue-->
-      <div id="catalogue" class="container">
-        <header class="subHeader"><h2>Our Catalogue</h2></header>
-            <input type="text" id="search" placeholder="search by book title">
-        <button id="searchBtn">Search</button>
-            <!--The Books will go in here-->
-        
-      </div>
-      <!--Reservation basket-->
-      <div id="basket" class="container">
-        <header class="subHeader"><h2>Reservation Basket</h2></header>
-        <!--Reserved books will be entered here-->
-      </div>
-      <div>
-    </main>
-    
-      <footer id="footer">
-            <a href="mailto:edwardkoikai@gmail.com">
-              <img
-                src="https://img.shields.io/badge/email me-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white"
-              />
-            </a>
-            <a href="https://twitter.com/tribe_edd">
-              <img
-                src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/edward-koikai67/">
-              <img
-                src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"
-              />
-            </a>
-            <p>© ALL RIGHTS RESERVED DESIGN: koikai</p>
-      </footer>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#catalogue">Our Catalogue</a>
+        <a href="#basket">Reservation Basket</a>
+      </nav>
     </div>
+    <!--Home Page-->
+    <div id="home" class="container">
+      <!-- a short description of the webpage -->
+      <h2>Welcome!</h2>
+      <h3>
+        Discover the joy of reading with our curated collection of books
+        available for reservation. Whether you're a bookworm or a casual reader,
+        our user-friendly platform makes it easy to explore and reserve your
+        favorite titles with just a few clicks.
+      </h3>
+    </div>
+    <!--Catalogue-->
+    <div id="catalogue" class="catalogue">
+      <header class="subHeader"><h2>Our Catalogue</h2></header>
+      <input type="text" id="search" placeholder="search by book title" />
+      <button id="searchBtn">Search</button>
+      <ul id="book-list" class="cards"></ul>
+      <!--The Books will go in here-->
+    </div>
+    <!--Reservation basket-->
+    <div id="basket" class="container">
+      <header class="subHeader"><h2>Reservation Basket</h2></header>
+      <!--Reserved books will be entered here-->
+    </div>
+      <footer id="footer">
+        <a href="mailto:edwardkoikai@gmail.com">
+          <img
+            src="https://img.shields.io/badge/email me-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white"
+          />
+        </a>
+        <a href="https://twitter.com/tribe_edd">
+          <img
+            src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/edward-koikai67/">
+          <img
+            src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"
+          />
+        </a>
+        <p>© ALL RIGHTS RESERVED DESIGN: koikai</p>
+      </footer>
+      <script src="./index.js"></script>
   </body>
 </html>
