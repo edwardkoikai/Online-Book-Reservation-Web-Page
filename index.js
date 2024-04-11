@@ -1,6 +1,8 @@
+
 function displayBooks(book){
     let card = document.createElement("li")
-    card.className = "card"
+    card.className = "card";
+    let remainingBooks = book.inventory - book.books_sold;
     card.innerHTML = `
     <img src = "${book.cover}">
     <div class= "content">
@@ -8,13 +10,36 @@ function displayBooks(book){
     <p>Author: ${book.author}</p>
     <p>Year of Pub: ${book.yearOfPub}</p>
     <p>Price : Ksh.${book.price}</p>
-    <p>Copies Left: ${book.copiesleft}</p>
+    <p class="copies-left">Copies Left: ${remainingBooks}</p>
     </div>
     <div class="reserveBtn">
-    <button>Reserve</button>
+    <button class="rsvBtn">Reserve</button>
+    <button class="wishlistBtn">
+        Wishlist <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png">
+    </button>
     </div>
     `
-    document.querySelector("#book-list").appendChild(card)
+    document.querySelector("#book-list").appendChild(card);
+
+    // Attach event listener to the reserve button
+    card.querySelector('.rsvBtn').addEventListener('click', () => {
+        let copiesLeftParagraph = card.querySelector('.copies-left');
+        reserveBook(card, copiesLeftParagraph);
+    }); 
+}
+function reserveBook(card, copiesLeftParagraph) {
+    let remainingBooks = parseInt(copiesLeftParagraph.textContent.split(': ')[1]);
+    
+    if (remainingBooks > 0) {
+        remainingBooks -= 1;
+        copiesLeftParagraph.textContent = `Copies Left: ${remainingBooks}`;
+        // console.log('Book reserved!');
+        if (remainingBooks === 0) {
+            card.querySelector('.rsvBtn').textContent = 'Not Available';
+        }
+    } else {
+        alert('Book not in stock');
+    }
 }
 function getAllBooks(){
     fetch("http://localhost:3000/books")
@@ -22,8 +47,31 @@ function getAllBooks(){
     .then(bookData => bookData.forEach(book => displayBooks(book)))
     .catch(error => console.log(error))
 }
+let searchTitle = document.getElementById("search")
+let searchButton = document.getElementById("searchBtn")
+document.querySelector("#searchBtn").addEventListener("click", () =>{
+    // e.preventDefault()
+    const searchResult = searchTitle.value
+    findBookTitle(searchResult)
+})
+function findBookTitle(searchResult){
+    const allBooks = document.querySelectorAll(".card");
+    for(const item of allBooks){
+        const bookTitle = item.querySelector("h4").innerText.toLowerCase();
+        if(bookTitle.includes(searchResult.toLowerCase())){
+            item.style.display = "inline-block"
+        }
+        else{
+            item.style.display = "none"
+        }
+    }
+}
+
 
 function initialize(){
     getAllBooks();
 }
-initialize()
+
+initialize();
+   
+

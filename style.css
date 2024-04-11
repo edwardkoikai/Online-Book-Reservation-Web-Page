@@ -162,10 +162,10 @@ div#navbar a {
   /* margin-bottom: 5px; */
 
 }
-.reserveBtn button{
-  width: 100px;
+.rsvBtn{
+  width: 70px;
   display: block;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: auto;
   padding: 10px 10px;
   border: 1px;
@@ -177,6 +177,25 @@ div#navbar a {
  
   /* position: relative; */
 }
+.wishlistBtn {
+  /* Add styles to the wishlist button */
+  /* For example: */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.wishlistBtn img {
+  /* Add styles to the wishlist icon */
+  /* For example: */
+  width: 20px;
+  height: 20px;
+  margin-left: 5px; /* Add some space between the text and the icon */
+}
+
 .reserveBtn button:hover{
     background-color: black;
     color:aliceblue;

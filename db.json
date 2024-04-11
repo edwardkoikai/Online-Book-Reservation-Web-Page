@@ -1,184 +1,204 @@
 {
-    "books": [
-      {
-        "id": "1",
-        "price": "800",
-        "title": "Atomic Habits",
-        "copiesleft": 6,
-        "author": "James Clear",
-        "yearOfPub": "2016",
-        "cover": "https://covers.openlibrary.org/b/id/14605114-M.jpg"
-      },
-      {
-        "id": "2",
-        "price": "450",
-        "title": "Only Time Will Tell",
-        "copiesleft": 8,
-        "author": "Jeffrey Archer",
-        "yearOfPub": "2011",
-        "cover": "https://covers.openlibrary.org/b/id/14534401-M.jpg"
-      },
-      {
-        "id": "3",
-        "price": "1200",
-        "title": "The 48 Laws of Power",
-        "copiesleft": 8,
-        "author": "Robert Greene",
-        "yearOfPub": "1998",
-        "cover": "https://covers.openlibrary.org/b/id/12920669-M.jpg"
-      },
-      {
-        "id": "4",
-        "price": "3000",
-        "title": "The Alchemist",
-        "copiesleft": 20,
-        "author": "Paulo Coelho",
-        "yearOfPub": "2006",
-        "cover": "https://covers.openlibrary.org/b/id/45762-M.jpg"
-      },
-      {
-        "id": "5",
-        "price": "1300",
-        "title": "Think and Grow Rich",
-        "copiesleft": 5,
-        "author": "Napolean Hill",
-        "yearOfPub": "2008",
-        "cover": "https://covers.openlibrary.org/b/id/14542545-M.jpg"
-      },
-      {
-        "id": "6",
-        "price": "1200",
-        "title": "The Subtle Art of Not Giving a Fuck",
-        "copiesleft": 15,
-        "author": "Mark Manson",
-        "yearOfPub": "",
-        "cover": "https://covers.openlibrary.org/b/id/12833562-M.jpg"
-      },
-      {
-        "id": "7",
-        "price": "500",
-        "title": "The Psychology of Money",
-        "copiesleft": 8,
-        "author": "Morgan Housel",
-        "yearOfPub": "2020",
-        "cover": "https://covers.openlibrary.org/b/id/12824425-M.jpg"
-      },
-      {
-        "id": "8",
-        "price": "580",
-        "title": "The Rational Male",
-        "copiesleft": 8,
-        "author": "Rollo Tomassi",
-        "yearOfPub": "2013",
-        "cover": "https://covers.openlibrary.org/b/id/10326468-M.jpg"
-      },
-      {
-        "id": "9",
-        "price": "2500",
-        "title": "Give and take",
-        "copiesleft": 17,
-        "author": "Adam M. Grant",
-        "yearOfPub": "2013",
-        "cover": "https://covers.openlibrary.org/b/id/8167467-M.jpg"
-      },
-      {
-        "id": "10",
-        "price": "1000",
-        "title": "Things Fall Apart",
-        "copiesleft": 11,
-        "author": "Chinua Achebe",
-        "yearOfPub": "1958",
-        "cover": "https://covers.openlibrary.org/b/id/10502954-M.jpg"
-      },
-      {
-        "id": "11",
-        "price": "1110",
-        "title": "My life in prison",
-        "copiesleft": 1,
-        "author": "John Kiriamiti",
-        "yearOfPub": "2004",
-        "cover": "https://covers.openlibrary.org/b/id/4265812-M.jpg"
-      },
-      {
-        "id": "12",
-        "price": "650",
-        "title": "Rich dad, poor dad",
-        "copiesleft": 9,
-        "author": " Robert T.",
-        "yearOfPub": "2022",
-        "cover": "https://covers.openlibrary.org/b/id/13441001-M.jpg"
-      },
-      {
-        "id": "13",
-        "price": "500",
-        "title": "Zero to One",
-        "copiesleft": 12,
-        "author": "Peter A. Thiel",
-        "yearOfPub": "2001",
-        "cover": "https://covers.openlibrary.org/b/id/10240969-M.jpg"
-      },
-      {
-        "id": "14",
-        "price": "800",
-        "title": "Finding Me",
-        "copiesleft": 10,
-        "author": "Viola Davis",
-        "yearOfPub": "2022",
-        "cover": "https://covers.openlibrary.org/b/id/12881449-M.jpg"
-      },
-      {
-        "id": "15",
-        "price": "800",
-        "title": "Gifted hands",
-        "copiesleft": 3,
-        "author": "Ben Carson,",
-        "yearOfPub": "1987",
-        "cover": "https://covers.openlibrary.org/b/id/9636480-M.jpg"
-      },
-      {
-        "id": "16",
-        "price": "800",
-        "title": "War and peace",
-        "copiesleft": 2,
-        "author": "Lev Nikolaevič Tolstoy",
-        "yearOfPub": "1864",
-        "cover": "https://covers.openlibrary.org/b/id/14598041-M.jpg"
-      },
-      {
-        "id": "17",
-        "price": "900",
-        "title": "Nova",
-        "copiesleft": 10,
-        "author": "Samuel R. Delany",
-        "yearOfPub": "1968",
-        "cover": "https://covers.openlibrary.org/b/olid/OL5610389M-M.jpg"
-      },
-      {
-        "id": "18",
-        "price": "8500",
-        "title": "Crying in H Mart",
-        "copiesleft": 4,
-        "author": "Michelle Zauner",
-        "yearOfPub": "2021",
-        "cover": "https://covers.openlibrary.org/b/id/10462708-M.jpg"
-      },
-      {
-        "id": "19",
-        "price": "600",
-        "title": "Become what you are",
-        "copiesleft": 6,
-        "author": "Alan Watts",
-        "yearOfPub": "1995",
-        "cover": "https://covers.openlibrary.org/b/olid/OL3561444M-M.jpg"
-      },
-      {
-        "id": "20",
-        "price": "3000",
-        "title": "Shattered Vows",
-        "copiesleft": 8,
-        "author": "Shain Rose",
-        "yearOfPub": "2022",
-        "cover": "https://covers.openlibrary.org/b/id/13488049-M.jpg"
-      }
-    ]
-  }
+  "books": [
+    {
+      "id": "1",
+      "price": "800",
+      "title": "Atomic Habits",
+      "inventory": 6,
+      "books_sold": 0,
+      "author": "James Clear",
+      "yearOfPub": "2016",
+      "cover": "https://covers.openlibrary.org/b/id/14605114-L.jpg"
+    },
+    {
+      "id": "2",
+      "price": "450",
+      "title": "Only Time Will Tell",
+      "inventory": 8,
+      "books_sold": 6,
+      "author": "Jeffrey Archer",
+      "yearOfPub": "2011",
+      "cover": "https://covers.openlibrary.org/b/id/14534401-M.jpg"
+    },
+    {
+      "id": "3",
+      "price": "1200",
+      "title": "The 48 Laws of Power",
+      "inventory": 8,
+      "books_sold": 2,
+      "author": "Robert Greene",
+      "yearOfPub": "1998",
+      "cover": "https://covers.openlibrary.org/b/id/12920669-M.jpg"
+    },
+    {
+      "id": "4",
+      "price": "3000",
+      "title": "The Alchemist",
+      "inventory": 20,
+      "books_sold": 4,
+      "author": "Paulo Coelho",
+      "yearOfPub": "2006",
+      "cover": "https://covers.openlibrary.org/b/id/45762-M.jpg"
+    },
+    {
+      "id": "5",
+      "price": "1300",
+      "title": "Think and Grow Rich",
+      "inventory": 5,
+      "books_sold": 2,
+      "author": "Napolean Hill",
+      "yearOfPub": "2008",
+      "cover": "https://covers.openlibrary.org/b/id/14542545-M.jpg"
+    },
+    {
+      "id": "6",
+      "price": "1200",
+      "title": "The Subtle Art of Not Giving a Fuck",
+      "inventory": 15,
+      "books_sold": 3,
+      "author": "Mark Manson",
+      "yearOfPub": "",
+      "cover": "https://covers.openlibrary.org/b/id/12833562-M.jpg"
+    },
+    {
+      "id": "7",
+      "price": "500",
+      "title": "The Psychology of Money",
+      "inventory": 8,
+      "books_sold": 1,
+      "author": "Morgan Housel",
+      "yearOfPub": "2020",
+      "cover": "https://covers.openlibrary.org/b/id/12824425-M.jpg"
+    },
+    {
+      "id": "8",
+      "price": "580",
+      "title": "The Rational Male",
+      "inventory": 8,
+      "books_sold": 1,
+      "author": "Rollo Tomassi",
+      "yearOfPub": "2013",
+      "cover": "https://covers.openlibrary.org/b/id/10326468-M.jpg"
+    },
+    {
+      "id": "9",
+      "price": "2500",
+      "title": "Give and take",
+      "inventory": 17,
+      "books_sold": 6,
+      "author": "Adam M. Grant",
+      "yearOfPub": "2013",
+      "cover": "https://covers.openlibrary.org/b/id/8167467-M.jpg"
+    },
+    {
+      "id": "10",
+      "price": "1000",
+      "title": "Things Fall Apart",
+      "inventory": 11,
+      "books_sold": 4,
+      "author": "Chinua Achebe",
+      "yearOfPub": "1958",
+      "cover": "https://covers.openlibrary.org/b/id/10502954-M.jpg"
+    },
+    {
+      "id": "11",
+      "price": "1110",
+      "title": "My life in prison",
+      "inventory": 1,
+      "books_sold": 0,
+      "author": "John Kiriamiti",
+      "yearOfPub": "2004",
+      "cover": "https://covers.openlibrary.org/b/id/4265812-M.jpg"
+    },
+    {
+      "id": "12",
+      "price": "650",
+      "title": "Rich dad, poor dad",
+      "inventory": 9,
+      "books_sold": 1,
+      "author": " Robert T.",
+      "yearOfPub": "2022",
+      "cover": "https://covers.openlibrary.org/b/id/13441001-M.jpg"
+    },
+    {
+      "id": "13",
+      "price": "500",
+      "title": "Zero to One",
+      "inventory": 12,
+      "books_sold": 5,
+      "author": "Peter A. Thiel",
+      "yearOfPub": "2001",
+      "cover": "https://covers.openlibrary.org/b/id/10240969-M.jpg"
+    },
+    {
+      "id": "14",
+      "price": "800",
+      "title": "Finding Me",
+      "inventory": 10,
+      "books_sold": 4,
+      "author": "Viola Davis",
+      "yearOfPub": "2022",
+      "cover": "https://covers.openlibrary.org/b/id/12881449-M.jpg"
+    },
+    {
+      "id": "15",
+      "price": "800",
+      "title": "Gifted hands",
+      "inventory": 3,
+      "books_sold": 0,
+      "author": "Ben Carson,",
+      "yearOfPub": "1987",
+      "cover": "https://covers.openlibrary.org/b/id/9636480-M.jpg"
+    },
+    {
+      "id": "16",
+      "price": "800",
+      "title": "War and peace",
+      "inventory": 2,
+      "books_sold": 0,
+      "author": "Lev Nikolaevič Tolstoy",
+      "yearOfPub": "1864",
+      "cover": "https://covers.openlibrary.org/b/id/14598041-M.jpg"
+    },
+    {
+      "id": "17",
+      "price": "900",
+      "title": "Nova",
+      "inventory": 10,
+      "books_sold": 2,
+      "author": "Samuel R. Delany",
+      "yearOfPub": "1968",
+      "cover": "https://covers.openlibrary.org/b/olid/OL5610389M-M.jpg"
+    },
+    {
+      "id": "18",
+      "price": "8500",
+      "title": "Crying in H Mart",
+      "inventory": 4,
+      "books_sold": 0,
+      "author": "Michelle Zauner",
+      "yearOfPub": "2021",
+      "cover": "https://covers.openlibrary.org/b/id/10462708-M.jpg"
+    },
+    {
+      "id": "19",
+      "price": "600",
+      "title": "Become what you are",
+      "inventory": 6,
+      "books_sold": 0,
+      "author": "Alan Watts",
+      "yearOfPub": "1995",
+      "cover": "https://covers.openlibrary.org/b/olid/OL3561444M-M.jpg"
+    },
+    {
+      "id": "20",
+      "price": "3000",
+      "title": "Shattered Vows",
+      "inventory": 8,
+      "books_sold": 1,
+      "author": "Shain Rose",
+      "yearOfPub": "2022",
+      "cover": "https://covers.openlibrary.org/b/id/13488049-M.jpg"
+    }
+  ]
+}
