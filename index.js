@@ -29,6 +29,7 @@ function displayBooks(book){
     card.querySelector('.wishlistBtn').addEventListener('click', () => {
         addToWishlist(book);
     });
+    
 }
 function reserveBook(card, copiesLeftParagraph) {
     let remainingBooks = parseInt(copiesLeftParagraph.textContent.split(': ')[1]);
@@ -73,6 +74,7 @@ function addToWishlist(book) {
     let basketList = document.querySelector("#basket-list")
     let basketItem = document.createElement("li")
     basketItem.className ="card"
+    basketItem.id = "basketItem"
     basketItem.innerHTML = `
     <img src = "${book.cover}">
     <div class= "content">
@@ -80,14 +82,44 @@ function addToWishlist(book) {
     <p>Author: ${book.author}</p>
     <p>Year of Pub: ${book.yearOfPub}</p>
     <p>Price : Ksh.${book.price}</p>
+    <div class="rmvbtn">
+    <button id="remove-button">Remove</button>
+    </div>
     `
     basketList.appendChild(basketItem)
+    basketList.querySelector(".rmvBtn").addEventListener("click", deleteWishListItem)
 }
+
+function addToWishlist(book) {
+    let basketList = document.querySelector("#basket-list");
+    let basketItem = document.createElement("li");
+    basketItem.className = "card";
+    basketItem.innerHTML = `
+        <img src="${book.cover}">
+        <div class="content">
+            <h4>Title: ${book.title}</h4>
+            <p>Author: ${book.author}</p>
+            <p>Year of Pub: ${book.yearOfPub}</p>
+            <p>Price : Ksh.${book.price}</p>
+            <div class="rmvbtn">
+                <button class="remove-button">Remove</button>
+            </div>
+        </div>
+    `;
+    basketList.appendChild(basketItem);
+    basketItem.querySelector(".remove-button").addEventListener("click", deleteWishListItem);
+}
+
+function deleteWishListItem(e){
+    e.target.closest('.card').remove(); // Remove the whole basket item
+}
+
 
 function initialize(){
     getAllBooks();
 }
 
 initialize();
+
    
 
