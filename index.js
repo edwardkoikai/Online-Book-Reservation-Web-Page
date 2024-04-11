@@ -26,6 +26,9 @@ function displayBooks(book){
         let copiesLeftParagraph = card.querySelector('.copies-left');
         reserveBook(card, copiesLeftParagraph);
     }); 
+    card.querySelector('.wishlistBtn').addEventListener('click', () => {
+        addToWishlist(book);
+    });
 }
 function reserveBook(card, copiesLeftParagraph) {
     let remainingBooks = parseInt(copiesLeftParagraph.textContent.split(': ')[1]);
@@ -66,7 +69,20 @@ function findBookTitle(searchResult){
         }
     }
 }
-
+function addToWishlist(book) {
+    let basketList = document.querySelector("#basket-list")
+    let basketItem = document.createElement("li")
+    basketItem.className ="card"
+    basketItem.innerHTML = `
+    <img src = "${book.cover}">
+    <div class= "content">
+    <h4>Title:${book.title}</h4>
+    <p>Author: ${book.author}</p>
+    <p>Year of Pub: ${book.yearOfPub}</p>
+    <p>Price : Ksh.${book.price}</p>
+    `
+    basketList.appendChild(basketItem)
+}
 
 function initialize(){
     getAllBooks();

@@ -13,12 +13,43 @@ body {
   background-position: center center;
   background-attachment: fixed;
 }
-#mainheader h1 {
+.mainheader{
   text-align: center;
-  margin: 50px auto;
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+#mainheader h1 {
+  /* text-align: center; */
+  /* margin: 100px auto; */
   background-color: antiquewhite;
   border-radius: 2px;
   width: fit-content;
+  font-size: 3em;
+}
+#navbar {
+  text-align: center;
+  /* margin: 0 auto; */
+  padding: 20px;
+  transform: transform 0.3s ease;
+}
+#navbar a {
+  /* display: inline-block; */
+  padding: 10px 60px;
+  background-color: antiquewhite;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+#navbar a:hover {
+  background-color: burlywood;
+  color: black;
+  transform: scale(1.1);
+}
+#navbar a.ctive {
+  background-color: aliceblue;
+  color: whitesmoke;
 }
 .container{
   width: 800px;
@@ -40,30 +71,7 @@ body {
   margin: 20px auto;
   width: 800px;
 }
-div#navbar {
-  text-align: center;
-  margin: 0 auto;
-  transform: transform 0.3s ease;
-}
-div#navbar a {
-  display: inline-block;
-  padding: 10px 60px;
-  background-color: antiquewhite;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 17px;
-  
-}
-#navbar a:hover {
-  background-color: burlywood;
-  color: black;
-  transform: scale(1.1);
-}
-#navbar a.ctive {
-  background-color: aliceblue;
-  color: whitesmoke;
-}
+
 #home h2 {
   text-align: center;
   color: #333;
@@ -227,5 +235,4 @@ div#navbar a {
     width: 60px; /* Set width for social media icons */
     height: auto; /* Maintain aspect ratio */
   }
-  
   
