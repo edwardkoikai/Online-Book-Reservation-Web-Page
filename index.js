@@ -11,13 +11,15 @@ function displayBooks(book){
     <p>Year of Pub: ${book.yearOfPub}</p>
     <p>Price : Ksh.${book.price}</p>
     <p class="copies-left">Copies Left: ${remainingBooks}</p>
-    </div>
-    <div class="reserveBtn">
+    <div class="bookButtons">
+  <div class="reserveBtn">
     <button class="rsvBtn">Reserve</button>
-    <button class="wishlistBtn">
-        Wishlist <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png">
-    </button>
-    </div>
+  </div>
+  <div class="wishlistBtn">
+    <button id="wishlistBtn">Wishlist <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"></button>
+  </div>
+</div>
+
     `
     document.querySelector("#book-list").appendChild(card);
 
@@ -75,17 +77,7 @@ function addToWishlist(book) {
     let basketItem = document.createElement("li")
     basketItem.className ="card"
     basketItem.id = "basketItem"
-    basketItem.innerHTML = `
-    <img src = "${book.cover}">
-    <div class= "content">
-    <h4>Title:${book.title}</h4>
-    <p>Author: ${book.author}</p>
-    <p>Year of Pub: ${book.yearOfPub}</p>
-    <p>Price : Ksh.${book.price}</p>
-    <div class="rmvbtn">
-    <button id="remove-button">Remove</button>
-    </div>
-    `
+    
     basketList.appendChild(basketItem)
     basketList.querySelector(".rmvBtn").addEventListener("click", deleteWishListItem)
 }
