@@ -12,10 +12,10 @@
     <header id="mainheader"><h1>Online Book Reservation Web Page</h1></header>
     <!--Navigation bar to allow users to navigate smoothly on our webpage-->
     <div id="navbar" class="container">
-      <nav>
+      <nav class="navBar">
         <a href="#home">Home</a>
         <a href="#catalogue">Our Catalogue</a>
-        <a href="#basket-list">Wish List</a>
+        <a href="#wish">Wish List</a>
       </nav>
     </div>
     <!--Home Page-->
@@ -38,35 +38,40 @@
       <!--The Books will go in here-->
     </div>
     <!--WishList Basket-->
-    <div id="basket-list" class="bsk">
+    <div class="basket-list" id="wish">
       <header class="subHeader"><h2>Wish List</h2></header>
+      <ul id="basket-list" class="cards"></ul>
       <!--wishlist books will be entered here-->
     </div>
-    <div>
-      <form>
-        <label>Feed Back</label>
-        <textarea placeholder="Enter your text here"></textarea>
+    <!--Feedback form for collecting customers views-->
+    <div id="feedbackFormContainer">
+      <form id="feedbackForm" >
+        <label for="feedback">Please Leave FeedBack</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your text here"></textarea>
         <input type ="submit">
       </form>
     </div>
+    <!--Footer containing copyrights and contacts-->
       <footer id="footer">
-        <a href="mailto:edwardkoikai@gmail.com">
+        <!-- <a href="mailto:edwardkoikai@gmail.com"> -->
           <img
             src="https://img.shields.io/badge/email me-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white"
           />
         </a>
-        <a href="https://twitter.com/tribe_edd">
+        <!-- <a href="https://twitter.com/tribe_edd"> -->
           <img
             src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"
           />
         </a>
-        <a href="https://www.linkedin.com/in/edward-koikai67/">
+        <!-- <a href="https://www.linkedin.com/in/edward-koikai67/"> -->
           <img
             src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"
           />
         </a>
-        <p>© ALL RIGHTS RESERVED DESIGN: koikai</p>
+        <p>© ALL RIGHTS RESERVED | DESIGN: koikai</p>
       </footer>
-      <script src="./index.js"></script>
+      
   </body>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="./index.js"></script>
 </html>

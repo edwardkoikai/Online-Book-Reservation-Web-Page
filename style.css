@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: monospace;
@@ -13,11 +14,12 @@ body {
 #mainheader {
   text-align: center;
   padding: 10px 0;
-  background-color: #f9f9f9;
+  background-color:#f9f9f9;;
 }
 
 #mainheader h1 {
   font-size: 3em;
+
 }
 
 #navbar {
@@ -62,7 +64,7 @@ body {
   margin-bottom: 30px;
 }
 
-.catalogue, #basketlist{
+.catalogue{
   padding: 50px 0;
   background-color: rgba(233, 232, 205, 0.788);
 }
@@ -79,12 +81,6 @@ body {
   border: 1px solid #ccc;
   display: inline-block;
   margin-left: 300px;
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-content: center;
 }
 
 #search:hover{
@@ -200,6 +196,53 @@ font-weight: 200;
  background-color: whitesmoke;
 
 }
+div.basket-list{
+  background-color:beige;
+  margin: 20px 0
+}
+#feedbackForm {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="submit"] {
+  background-color: black; /* Blue submit button */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding around text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Style for form container */
+#feedbackFormContainer {
+  background-color: rgba(233, 232, 205, 0.788);
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
 #footer {
   background-color: #333;
   color: #fff;
