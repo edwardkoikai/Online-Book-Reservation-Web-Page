@@ -25,7 +25,10 @@ Git clone https://github.com/edwardkoikai/Online-Book-Reservation-Web-Page
 
 # Live Link
 
+You can click [Here](https://online-book-reservation-web-page.vercel.app/) to view the website
+or 
 
+https://online-book-reservation-web-page.vercel.app/
 
 ## Technologies used
 
