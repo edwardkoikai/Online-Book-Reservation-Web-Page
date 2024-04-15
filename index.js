@@ -3,7 +3,7 @@ const scroll = new SmoothScroll('.navBar a[href*="#"]', {
 });
 //function to retrieve book details from the json server
 function getAllBooks() {
-    fetch("http://localhost:3000/books")
+    fetch("https://booksapi-k4mp.onrender.com/books")
       .then((res) => res.json())
       .then((bookData) => bookData.forEach((book) => displayBooks(book)))
       .catch((error) => console.log(error));
