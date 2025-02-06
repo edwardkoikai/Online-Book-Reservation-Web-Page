@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" type="text/css" />
 
-    <title>Online-Book-Reservation-Web-Page</title>
-  </head>
-  <body>
-    <!--Contains the header of our webpage-->
-    <header id="mainheader"><h1>Online Book Reservation Web Page</h1></header>
-    <!--Navigation bar to allow users to navigate smoothly on our webpage-->
-    <div id="navbar" class="container">
-      <nav class="navBar">
-        <a href="#home">Home</a>
-        <a href="#catalogue">Our Catalogue</a>
-        <a href="#wish">Wish List</a>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+
+  <title>Online-Book-Reservation-Web-Page</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="mainheader">
+    <div class="header-content">
+      <h1>Online Book Reservation</h1>
+      <p>Your Gateway to Endless Stories</p>
     </div>
-   <!-- Home Page -->
-<div id="home" class="container">
-  <div class="home-content">
-    <div class="home-text">
-      <h2>Welcome to Your Next Great Read!</h2>
-      <h3>
-        Discover the joy of reading with our curated collection of books. 
-        Reserve your favorite titles with just a few clicks and dive into 
-        a world of stories, knowledge, and imagination.
-      </h3>
-      <a href="#catalogue" class="cta-button">Explore Our Catalogue</a>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <div class="nav-content">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#catalogue" class="nav-link">Catalogue</a>
+      <a href="#wish" class="nav-link">Wish List</a>
     </div>
-    <div class="home-image">
-      <img src="https://i.pinimg.com/736x/a9/49/c5/a949c5086b593f3ffe821356ad8bb821.jpg" alt="Bookshelf Image" />
+  </nav>
+
+  <!-- Home Page -->
+  <div id="home" class="container">
+    <div class="home-content">
+      <div class="home-text">
+        <h2>Welcome to Your Next Great Read!</h2>
+        <h3>
+          Discover the joy of reading with our curated collection of books.
+          Reserve your favorite titles with just a few clicks and dive into
+          a world of stories, knowledge, and imagination.
+        </h3>
+        <a href="#catalogue" class="cta-button">Explore Our Catalogue</a>
+      </div>
+      <div class="home-image">
+        <img src="https://i.pinimg.com/736x/a9/49/c5/a949c5086b593f3ffe821356ad8bb821.jpg" alt="Bookshelf Image" />
+      </div>
     </div>
   </div>
-</div>
-    <!--Catalogue-->
-    <div id="catalogue" class="catalogue">
-      <header class="subHeader"><h2>Our Catalogue</h2></header>
-      <input type="text" id="search" placeholder="search by book title" />
-      <button id="searchBtn">Search</button>
-      <ul id="book-list" class="cards"></ul>
-      <!--The Books will go in here-->
-    </div>
-    <!--WishList Basket-->
-    <div class="basket-list" id="wish">
-      <header class="subHeader"><h2>Wish List</h2></header>
-      <ul id="basket-list" class="cards"></ul>
-      <!--wishlist books will be entered here-->
-    </div>
-    <!--Feedback form for collecting customers views-->
-    <div id="feedbackFormContainer">
-      <form id="feedbackForm" >
-        <label for="feedback">Please Leave FeedBack</label>
-        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your text here"></textarea>
-        <input type ="submit">
-      </form>
-    </div>
-    <!--Footer containing copyrights and contacts-->
-      <footer id="footer">
-        <!-- <a href="mailto:edwardkoikai@gmail.com"> -->
-          <img
-            src="https://img.shields.io/badge/email me-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white"
-          />
-        </a>
-        <!-- <a href="https://twitter.com/tribe_edd"> -->
-          <img
-            src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"
-          />
-        </a>
-        <!-- <a href="https://www.linkedin.com/in/edward-koikai67/"> -->
-          <img
-            src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"
-          />
-        </a>
-        <p>© ALL RIGHTS RESERVED | DESIGN: koikai</p>
-      </footer>
-      
-  </body>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="./index.js"></script>
+  <!--Catalogue-->
+  <div id="catalogue" class="catalogue">
+    <header class="subHeader">
+      <h2>Our Catalogue</h2>
+    </header>
+    <input type="text" id="search" placeholder="search by book title" />
+    <button id="searchBtn">Search</button>
+    <ul id="book-list" class="cards"></ul>
+    <!--The Books will go in here-->
+  </div>
+  <!--WishList Basket-->
+  <div class="basket-list" id="wish">
+    <header class="subHeader">
+      <h2>Wish List</h2>
+    </header>
+    <ul id="basket-list" class="cards"></ul>
+    <!--wishlist books will be entered here-->
+  </div>
+  <!--Feedback form for collecting customers views-->
+  <div id="feedbackFormContainer">
+    <form id="feedbackForm">
+      <label for="feedback">Please Leave FeedBack</label>
+      <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your text here"></textarea>
+      <input type="submit">
+    </form>
+  </div>
+  <!--Footer containing copyrights and contacts-->
+  <footer id="footer">
+    <!-- <a href="mailto:edwardkoikai@gmail.com"> -->
+    <img src="https://img.shields.io/badge/email me-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" />
+    </a>
+    <!-- <a href="https://twitter.com/tribe_edd"> -->
+    <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />
+    </a>
+    <!-- <a href="https://www.linkedin.com/in/edward-koikai67/"> -->
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+    </a>
+    <p>© ALL RIGHTS RESERVED | DESIGN: koikai</p>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="./index.js"></script>
+
 </html>
